@@ -69,9 +69,7 @@ def You_won():
     while True:
         screen.fill('violet')
         win_text = font.render("Хожсонд баяр хүргэе! Бэлгээ аваарай!", True, "black")
-        HappyBDay = font.render("Төрсөн өдрийн мэнд хүргэе!", True, "black")
         screen.blit(win_text, (0, 150))
-        screen.blit(HappyBDay, (150, 250))
         winning_sound.play()
         for event in pygame.event.get():
             if event.type==pygame.QUIT:
